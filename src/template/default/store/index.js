@@ -1,3 +1,4 @@
+// vuex https://vuex.vuejs.org/zh-cn/
 import Vue from '../../../lib/vue/vue2';
 import Vuex from '../../../lib/vue/vuex';
 import home from './home/index';

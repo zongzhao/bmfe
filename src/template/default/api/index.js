@@ -3,20 +3,20 @@
   */
 
 import { Api } from '../constants/index'
-import { getRequest } from './utils'
+// import { getRequest } from './utils'
 
-// select data
+// home request
 export const getHomeList = (params) => {
   return getRequest({
-    url: `${banma.api.monitor}${Api.home}`,
+    url: `${location.hostname}${Api.home}`,
     params: params
   })
 }
 
-//
+// detail request
 export const getDetailData = (params) => {
   return getRequest({
-    url: `${banma.api.monitor}${Api.detail}`,
+    url: `${location.hostname}${Api.detail}`,
     params: params
   })
 }

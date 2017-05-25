@@ -1,5 +1,5 @@
 /**
-  * 路由
+  * 路由 https://router.vuejs.org/zh-cn/essentials/getting-started.html
   */
 
 import Vue from '../../../lib/vue/vue2';
@@ -13,7 +13,7 @@ const routes = [
     path: '/',
     component: Home
   }, {
-    path: '/detail',
+    path: '/detail:id',
     component: Detail
   }
 ]

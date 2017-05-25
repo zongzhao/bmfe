@@ -23,7 +23,7 @@ export default {
   //   new webpack.HotModuleReplacementPlugin()
   // ],
   module: {
-    // noParse: [/moment-with-locales/],
+    noParse: [/moment-with-locales/],
     rules: [{
       test: /\.(js|es6)$/,
       exclude: '/node_modules/',
