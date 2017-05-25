@@ -12,11 +12,12 @@ Object.defineProperty(exports, "__esModule", {
 });
 
 exports.default = function (options) {
-  // if (!options.force && fs.readdirSync(process.cwd()).length) {
-  //   console.log(chalk.yellow('Warning: 此命令将会覆盖某些文件！，请使用 --force(-f) 继续。'));
-  //   console.log(chalk.red('存在警告，放弃操作。'));
-  //   return;
-  // }
+
+  if (!options.force && _fs2.default.readdirSync(process.cwd()).length) {
+    console.log(_chalk2.default.yellow('Warning: 此命令将会覆盖某些文件！，请使用 --force(-f) 继续。'));
+    console.log(_chalk2.default.red('存在警告，放弃操作。'));
+    return;
+  }
 
   var dirname = _path2.default.join(__dirname, '..', 'src', 'template', 'default');
 

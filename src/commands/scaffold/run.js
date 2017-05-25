@@ -6,11 +6,12 @@ import regexfiles from 'regex-files';
 import { pMkdir, pWriteFile } from '../../utils/fs'
 
 export default function (options) {
-  // if (!options.force && fs.readdirSync(process.cwd()).length) {
-  //   console.log(chalk.yellow('Warning: 此命令将会覆盖某些文件！，请使用 --force(-f) 继续。'));
-  //   console.log(chalk.red('存在警告，放弃操作。'));
-  //   return;
-  // }
+
+  if (!options.force && fs.readdirSync(process.cwd()).length) {
+    console.log(chalk.yellow('Warning: 此命令将会覆盖某些文件！，请使用 --force(-f) 继续。'));
+    console.log(chalk.red('存在警告，放弃操作。'));
+    return;
+  }
 
   let dirname = path.join(__dirname, '..', 'src', 'template', 'default');
 
