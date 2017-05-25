@@ -1,0 +1,40 @@
+{
+  "name": "bmfe",
+  "version": "0.1.1",
+  "description": "banma fe assistant",
+  "main": "dist/bmfe.js",
+  "bin": {
+    "bmfe": "bin/bmfe"
+  },
+  "scripts": {
+    "start": "node ./bin/bmfe",
+    "test": "webpack --progress --watch & npm start",
+    "build": "webpack --progress --profile --colors"
+  },
+  "dependencies": {
+    "art-template": "^4.9.1",
+    "async": "^2.4.1",
+    "chalk": "^1.1.3",
+    "child_process": "^1.0.2",
+    "commander": "^2.9.0",
+    "fs": "^0.0.1-security",
+    "inquirer": "^3.0.6",
+    "mkdirp": "^0.5.1",
+    "prompt": "^1.0.0",
+    "regex-files": "^0.1.2"
+  },
+  "devDependencies": {
+    "babel-core": "^6.24.1",
+    "babel-loader": "^7.0.0",
+    "babel-preset-es2015": "^6.24.1",
+    "json-loader": "^0.5.4",
+    "webpack": "2.1.0-beta.25",
+    "webpack-dev-server": "2.1.0-beta.10"
+  },
+  "keywords": [
+    "vue",
+    "banma"
+  ],
+  "author": "yureturn",
+  "license": "MIT"
+}

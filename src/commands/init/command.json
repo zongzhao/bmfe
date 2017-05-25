@@ -1,0 +1,12 @@
+{
+  "name": "init",
+  "version": "0.1",
+  "author": "yureturn",
+  "description": "为项目初始化文件结构",
+  "options": [{
+    "flags": "-f, --force",
+    "description": "在非空目录强制执行"
+  }],
+  "requires": [],
+  "packages": []
+}

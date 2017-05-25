@@ -1,0 +1,7 @@
+/**
+  * state
+  */
+
+export default {
+  data: []
+}
